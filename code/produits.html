@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Autonomous Car</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Autonomous Car Control Panel</h1>
+    </header>
+    <main>
+        <p>Use the buttons below to control your autonomous car.</p>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+    </main>
+    <script>
+        document.getElementById('startBtn').addEventListener('click', function() {
+            console.log('Car started');
+            // Insert code to send start command to Raspberry Pi here
+        });
+        
+        document.getElementById('stopBtn').addEventListener('click', function() {
+            console.log('Car stopped');
+            // Insert code to send stop command to Raspberry Pi here
+        });
+    </script>
+</body>
+</html>
